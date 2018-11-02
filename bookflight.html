@@ -1,0 +1,146 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            body{font-family: Verdana;}
+            .navbar{display:flex; justify-content: center; border:1px solid black; background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%); 
+                    font-weight: bold; height:100px; font-size:30px; text-transform: uppercase;}
+                .main{width:800px; height:700px; border:1px solid black; margin:10 auto; background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);}
+                h1{text-indent: 20px; margin:10px;}
+                .main1{border:1px solid black; margin:10px; padding:10px;}
+                .minimain1,.main2,.main3{display:flex; justify-content: space-around;  font-size:20px; text-transform: uppercase;
+                                margin:10px; padding:10px;}
+                     .secret{position:relative; top:100px; margin:10px auto; border:1px solid black; height:350px;
+                            font-size:20px; text-transform:capitalize; padding:10px; background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);}
+                                       button{font-size:20px;}
+                                       span{font-family:cursive; text-transform:uppercase; font-size:40px;}
+                                       select{font-size: 20px;}
+                                       input{font-size:20px;}
+                                   
+        </style>
+    </head>
+    <body>
+       <div class='navbar'>
+        <div class='logo'>Fly with <span>Speed airlines </span><i class="fab fa-phoenix-framework"></i> </div>
+          
+       </div>
+       <div class= 'main'>
+           <h1>Book flight</h1>
+           <div class='main1'>
+               <h1>Where and when</h1>
+               <div class='minimain1'>
+               <div class='roundtrip'> Round trip <input type='radio' name='same'></div>
+               <div class='oneway'> One way <input type='radio' name='same'></div>
+               <div class='advanced'> Advanced search <input type='radio' name='same'></div>
+            
+            </div>
+            <div class='main2'>
+            <div class='ins'> <i class="fas fa-plane-departure"> </i> <input type='text'  placeholder="Departing airport"></div> 
+                <div> <i class="far fa-calendar-alt"></i> <input type='date' id="datepicker" placeholder="Departing"></div> 
+                <div><select>
+                    <option>Economy</option>
+                    <option>First Class</option>
+                    <option>Business Class</option>
+                </select></div>
+            </div>
+              <div class='main3'>
+                <div class='ins'> <i class="fas fa-plane-arrival"></i> <input type='text' placeholder="Arrival airport"></div> 
+                <div> <i class="far fa-calendar-alt"></i> <input type='date' id="datepicker" placeholder="Arriving"></div> 
+                <div><select>
+                    <option>Economy</option>
+                    <option>First Class</option>
+                    <option>Business Class</option>
+                </select></div>
+            </div>   
+            <h4>My dates are flexible <input type='checkbox'></h4>
+
+            <h3>Passengers</h3>
+
+            <div class='main2'>
+                    <div><select>
+                            <option>Adult:1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+
+                        </select></div>
+                        <div><select>
+                                <option>Children:0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                            </select></div>
+                            <div><select>
+                                    <option>Infant:0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select></div>       
+            </div>
+                <h2>Promotional Offers</h2>
+                <h3><input type='text'></h3>
+                <h3><button type='button' class='search'>Search</button></h3>
+            
+
+           </div>
+         
+
+        </div>
+        <div class='secret'>
+            <h4>Select the best option from the following</h4>
+                <div> <input type='radio' name='price' class='info'> Lowest price for the date for economy: $1000/person  </div>
+                <div> <input type='radio' name='price' class='info'> Lowest price for the date for business: $3000/person  </div>
+                <div> <input type='radio' name='price' class='info'> Lowest price for the date for first class: $5000/person  </div>
+              
+              <div class='infopersonal'>
+                  <p>Please fill out the form</p>
+                 <p> <label>First Name:</label> <input type='text'> <label>Last Name:</label> <input type='text'> </p>
+                 <p> <label>Email:</label> <input type='email'> <label> Phone Number: </label> <input type='text'> </p>
+                <button type='button' class='laststep'>Continue</button>
+                  
+              </div>
+            </div >
+            <div class='goodbye'></div>
+        <script>
+            $('.secret').hide();
+            
+            
+              $('.oneway').click(function(){
+                  $('.main3').slideUp('slow');
+              })
+              $('.roundtrip').click(function(){
+                  $('.main3').slideDown('slow');
+              })
+              $('.advanced').click(function(){
+                  $('.main3').slideDown('slow');
+              })
+              $('.search').click(function(){
+        
+                  $('.main').hide();
+                 $('.secret').show();
+                 $('.infopersonal').hide();
+
+              })
+
+              $('.info').click(function(){
+                $('.infopersonal').show();
+              })
+              $('.laststep').click(function(){
+                  $('.secret').hide();
+                  $('.goodbye').html('<h1>You will get an email confirmation for the next step.</h1>');
+
+              })
+       
+            
+        </script>
+    </body>
+</html>

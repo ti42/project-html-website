@@ -1,0 +1,331 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            body{font-family:Arial; }
+            .navbar{display:flex; justify-content: center; border:1px solid black; background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);; 
+                    font-weight: bold;}
+            .ty,.logo,button{ padding:10px; font-size:20px;}
+            button{height:60px; margin:0; border:none; background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+                   font-weight: bold; text-transform: uppercase;}
+                
+            .logo{font-size:50px;}
+            .picture{height:300px; background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);}
+            .slidedown1{height:60px; background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);}
+            .search{   position:relative; 
+                    display:flex;  padding:4px;}
+                    .search > div{flex:1;}
+                    .see{padding:2px; text-align:center; font-size:20px;}
+                    .wrapper{position:relative; top:10px; height: 300px; width:1000px; border:1px solid black; margin:0 auto; 
+                        background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);  }
+                    .imp{ display:flex; justify-content: space-around;  margin:2px; padding:4px; font-size:20px;}
+                    .container,.containers{display:flex; justify-content: space-around;  margin:3px; padding:4px; height:70px; }
+                    .container1,.in1,.ins,.ind,.container2{width:250px; height:40px;}
+                    .simple{margin:15px; font-size:20px;}
+                    .in1{font-size:18px; background-color:rgb(106, 158, 128); margin:20px;}
+                    .option{display:flex; justify-content: space-around;  border:1px solid black; height:70px; font-size:20px; width:1000px; 
+                            margin:0 auto;}
+                            .option1{margin:10px; text-align:center; padding:10px; border:1px solid black;}
+                            h3{text-align:center;}
+                            .wrapper2{display:flex; justify-content: space-around; border: 1px solid black;}
+                    .img{width:500px; height:400px;  text-align: center; margin:10px;}
+                    h2{text-align:center;}
+                    .slidedown1{display:flex; justify-content: space-around; font-size:20px; text-transform:uppercase; padding:5px; font-weight:bold; }
+                    span{font-family:cursive; text-transform:uppercase;}
+                    .option{background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%); position:relative; top:20px;}
+                    .option1{background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);}
+                   a{all:unset;}
+                    a:link{text-decoration: none;  }
+                    
+                    .nav1,.nav2,.nav4{background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%); border-radius: 10px;}
+                    .see1,.see2,.see3{background-color:rgb(106, 158, 128);}
+                    .img1d{font-family: fantasy; font-weight: bold}
+                    .wrapper2{background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);}
+                    .plane{position: relative; top:80px;   animation: move 5s infinite;}
+                                       @keyframes move{ from{left:-300px;} to{left:1450px;} }
+                  
+
+                    
+                     
+ 
+        </style>
+    </head>
+    <body>
+            
+        <nav class='navbar'>
+            <div class='logo'>Fly with <span>Speed airlines </span><i class="fab fa-phoenix-framework"></i> </div>
+            <div class='ty'><button type='button' class='nav1'>Book</button></div>
+            <div class='ty'><button type='button' class='nav2'>Manage</button></div>
+            
+            <div class='ty'><button type='button' class='nav4'>Where we fly</button></div>
+            
+
+        </nav>
+      
+        <div class='picture'> 
+          
+            <div class='slidedown1'>
+                <div class='minislidedown1'> </div>
+                <div class='minislidedown2'></div>
+                <div class='minislidedown3'></div>
+            </div>  
+            <div class='plane'>
+                <img src="Pictures/plane.png" width='400px' height='200px'/>
+            </div>
+            
+            
+        </div>
+        <div class='wrapper'>
+        <nav class='search'>
+            <div class='see'><button type='button' class='see1'><i class="fas fa-plane"></i> Search Flight</button></div>
+            <div class='see'><button type='button'  class='see2'><i class="fas fa-tags"></i> Manage Booking or Checking </button></div>
+            <div class='see'> <button type='button' class='see3'><i class="fas fa-clock"></i> Flight Status </button></div><br/>
+        </nav>
+      <div class='imp'>
+        <div class='imp1'> Select to see your route or flight number </div> 
+        <div class='imp2'><label for='imp'>Route</label> <input class='imp2' type='radio' name='route' value='route'/></div>
+         <div class='imp3'><label> Flight number </label> <input class='imp3' type='radio' name='route' value='flight number'/></p></div>
+      
+        </div>
+       
+        <div class='container'>
+            <div class='container1'> <i class="fas fa-plane-departure"> </i> <input class='ins' type='text' placeholder="Departure airport" ></div>
+            <div class='container1'> <i class="fas fa-plane-arrival"></i> <input class='ind' type='text' placeholder='Arrival airport'></div>
+            <div class='container2'><button class='in1' type='button' >Continue</button></div>
+        </div >
+        <div class='containers'>
+            <div class='container1'><input class='ins' type='text' placeholder="Last Name"></div>
+            <div class='container1'><input class='ind' type='text' placeholder='Booking reference'></div>
+            <div class='container1'><a href="checkbooking.html"><button class='in1' type='button'>Manage booking</button></a></div>
+        </div >
+         <p class='simple'> <i class="fas fa-exclamation-circle"></i> Are you flexible with your dates: <label>Yes</label> <input type='radio' name='yes'>
+          <label>No</label> <input type='radio' name='yes'> </p>
+    </div>
+
+    <div class='option'>
+        <div class='option1'><a href="http://www.hotels.com" target="_blank"> <i class="fas fa-hotel"></i> Hotels</a></div>
+        <div class='option1'><a href="http://www.travelocity.com" target="_blank"><i class="fas fa-umbrella-beach"></i> Book a vacation</a> </div>
+        <div class='option1'><a href="http://www.carrent.com" target="_blank"><i class="fas fa-car-side"></i> Car rentals </a> </div>
+        <div class='option1'><a href="http://www.skyscanner.com" target="_blank"><i class="fas fa-bus"></i> Airport transfer </a> </div>
+        <div class='option1'> <a href="http://www.getyourguide.com" target="_blank"><i class="fas fa-monument"></i> Tour and attractions </a> </div>
+   
+
+    </div><br/>
+
+     <h3>Featured destination from New York</h3>
+    <div class='wrapper2'>
+
+     <div class='img'>
+         <div class='img1'><img src="Pictures/Dubai.jpg" width='320' height='370' title="Dubai"/></div>
+         <div class='img1d'> Dubai</div>
+
+     </div>
+     <div class='img'>
+         <div class='img1'><img src="Pictures/Australia.jpg" width='320' height='370' title="Australia"/></div>
+            <div class='img1d'>Australia</div>
+   
+        </div>
+        <div class='img'>
+                <div class='img1'> <img src="Pictures/Vatican.jpg" width='320' height='370' title="Vatican"/></div>
+                <div class='img1d'> Vatican</div>
+       
+            </div>
+            <div class='img'>
+                    <div class='img1'> <img src="Pictures/Singapore.jpg" width='320' height='370' title="Singapore"/></div>
+                    <div class='img1d'> Singapore</div>
+           
+                </div>
+            </div>
+            <h2 id='special'>Holiday package with best prices</h2>
+            <div class='wrapper2'>
+
+                    <div class='img'>
+                        <div class='img1'><img src="Pictures/India.jpg" width='320' height='370' title="India"/></div>
+                        <div class='img1d'><a href="asia.html">India $899</a></div>
+               
+                    </div>
+                    <div class='img'>
+                           <div class='img1'> <img src="Pictures/South.jpg" width='320' height='370' title="South Africa"/></div>
+                           <div class='img1d'><a href="africa.html">South Africa $500 </a> </div>
+                  
+                       </div>
+                       <div class='img'>
+                               <div class='img1'><img src="Pictures/NewZealand.jpg" width='320' height='370' title="New Zealand"/></div>
+                               <div class='img1d'> New Zealand $1200</div>
+                      
+                           </div>
+                           <div class='img'>
+                                   <div class='img1'><img src="Pictures/Hawaii.jpg" width='320' height='370' title="Hawaii"/></div>
+                                   <div class='img1d'> Hawaii $1234</div>
+                          
+                               </div>
+                           </div>
+                          
+
+        <script>
+            $('.slidedown1').hide();
+            $('.containers').hide();
+            $('.imp').hide();
+       $('.nav1').hover(function(){
+           $(this).css('font-size','23px');
+         
+       },function(){
+           $(this).css('font-size','20px');
+           
+       })
+       $('.nav1').click(function(){
+        $('.minislidedown1').html('<a href="bookflight.html"><button type="button" class="hov1">Book Flight <i class="fas fa-arrow-right"></i> </button></a>');
+        $('.hov1').hover(function(){
+            $(this).css('text-decoration','underline');
+           
+        },function(){
+            $(this).css('text-decoration','none');
+        
+        })
+           $('.minislidedown2').html('<a href="#special"><button type="button" class="special">Special offers  <i class="fas fa-arrow-right"> </i> </button></a>');
+           $('.special').hover(function(){
+            $(this).css('text-decoration','underline');
+           
+        },function(){
+            $(this).css('text-decoration','none');
+        
+        })
+           $('.minislidedown3').html('<a href="flightschedule.html"><button type="button" class="hov3">Flight schedule <i class="fas fa-arrow-right"></i> </button></a>');
+           $('.hov3').hover(function(){
+            $(this).css('text-decoration','underline');
+           
+        },function(){
+            $(this).css('text-decoration','none');
+        
+        })
+
+           $('.slidedown1').slideToggle('slow');
+         
+       })
+       $('.nav2').hover(function(){
+           $(this).css('font-size','23px');
+         
+       },function(){
+           $(this).css('font-size','20px');
+           
+       })
+       $('.nav2').click(function(){
+           $('.minislidedown1').html('<a href="checkbooking.html"><button type="button" class="hov4">check your booking <i class="fas fa-arrow-right"> </i> </button> </a> ');
+           $('.hov4').hover(function(){
+            $(this).css('text-decoration','underline');
+           
+        },function(){
+            $(this).css('text-decoration','none');  })
+           $('.minislidedown2').html('<a href="checkbooking.html"><button type="button" class="hov5">check your seat <i class="fas fa-arrow-right"></i> </button> </a> ');
+           $('.hov5').hover(function(){
+            $(this).css('text-decoration','underline');
+           
+        },function(){
+            $(this).css('text-decoration','none');  })
+           $('.minislidedown3').html('<a href="checkbooking.html"><button type="button" class="hov6">upgrade your flight <i class="fas fa-arrow-right"></i> </button> </a>');
+           $('.hov6').hover(function(){
+            $(this).css('text-decoration','underline');
+           
+        },function(){
+            $(this).css('text-decoration','none');  })
+           $('.slidedown1').slideToggle('slow');
+         
+       })
+   
+       $('.nav4').hover(function(){
+           $(this).css('font-size','23px');
+         
+       },function(){
+           $(this).css('font-size','20px');
+           
+       })
+       $('.nav4').click(function(){
+        $('.minislidedown1').html('<a href="asia.html"><button type="button" class="hov7">asia <i class="fas fa-arrow-right"></i> </button> </a>');
+        $('.hov7').hover(function(){
+            $(this).css('text-decoration','underline');
+           
+        },function(){
+            $(this).css('text-decoration','none');  })
+           $('.minislidedown2').html(' <a href="europe.html"><button type="button" class="hov8">europe <i class="fas fa-arrow-right"></i> </button> </a>');
+           $('.hov8').hover(function(){
+            $(this).css('text-decoration','underline');
+           
+        },function(){
+            $(this).css('text-decoration','none');  })
+           $('.minislidedown3').html('<a href="africa.html"> <button type="button" class="hov9">africa <i class="fas fa-arrow-right"></i> </button></a> ');
+           $('.hov9').hover(function(){
+            $(this).css('text-decoration','underline');
+           
+        },function(){
+            $(this).css('text-decoration','none');  })
+           $('.slidedown1').slideToggle('slow');
+         
+       })
+
+       $('.special').click(function(){
+
+       })
+       $('.see1').click(function(){
+        $('.containers').hide();
+           $('.container').show();
+           $('.ins').focus();
+       })
+       $('.see2').click(function(){
+           $('.container').hide();
+           $('.containers').show();
+           $('.ins').focus();
+       })
+       $('.see3').click(function(){
+           $('.imp').show();
+           $('.imp2').click(function(){
+            $('.containers').hide();
+           $('.container').show();
+           $('.ins').focus();
+           });
+           $('.imp3').click(function(){
+            $('.container').hide();
+           $('.containers').show();
+           $('.ins').focus();
+           })
+       })
+       $('button').hover(function(){
+           $(this).css('text-decoration','underline');
+       },function(){
+        $(this).css('text-decoration','none');
+
+       })
+       
+       $('.option1').hover(function(){
+           $(this).css('text-decoration','underline');
+       },function(){
+           $(this).css('text-decoration','none');
+       })
+
+       $('.in1').click(function(){
+          var x = $('.ins').val()
+          var y = $('.ind').val()
+
+           if(x=='' && y=='')
+           {
+               alert('Please enter data');
+           
+               $('.ins').focus();
+               
+            
+           }
+           
+           else(x != '' && y != '')
+               {
+                   final().onclick('click');
+               }
+            });
+             function final(){
+                   $('.container2').html('<a href="checkbooking.html"><button type="button"> Continue </button> </a>')
+
+             }  
+
+        </script>
+
+    </body>
+</html>

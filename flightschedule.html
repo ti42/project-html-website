@@ -1,0 +1,59 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            body{font-family: Verdana;background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);}
+            .navbar{display:flex; justify-content: center; border:1px solid black; background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%); 
+                    font-weight: bold; height:100px; font-size:30px;}
+                .main{width:900px; height:200px; border:1px solid black; margin:10 auto; position: relative; top:270px; background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);}
+                h1{text-indent: 20px; margin:10px;}
+                .main1{border:1px solid black; margin:10px; padding:10px;}
+                .minimain1,.main2,.main3{display:flex; justify-content: space-around; border:1px solid black; font-size:20px; text-transform: uppercase;
+                                margin:10px; padding:10px; position:relative; top:50px;}
+                                .secret{position:relative; top:100px; margin:10px auto; border:1px solid black; height:350px;
+                                       font-size:20px; text-transform:capitalize; padding:10px;}
+                                       button{font-size:20px;}
+                                      
+                                       span{font-family:cursive; text-transform:uppercase;}
+                                       select{font-size: 20px;}
+                                       input{font-size:20px;}
+                                       .plane{position: relative; top:-300px;   animation: move 3s infinite;}
+                                       @keyframes move{ from{left:-300px;} to{left:1200px;} }
+                                      
+                                   
+        </style>
+        </head>
+        <body>
+            <div class='navbar'>
+                <div class='logo'>Fly with <span>Speed airlines </span><i class="fab fa-phoenix-framework"></i> </div>
+               
+            </div>
+            <div class= 'main'>
+            <div class='main2'>
+                <div> <i class="fas fa-plane-departure"> </i> <input type='text'  placeholder="Departing airport"></div> 
+                    <div> <i class="far fa-calendar-alt"></i> <input type='date' id="datepicker" placeholder="Departing"></div> 
+                    <div><select>
+                        <option>Economy</option>
+                        <option>First Class</option>
+                        <option>Business Class</option>
+                    </select></div>
+                    <button type='button' class='laststep'>Continue</button>
+                </div>
+                <div class='plane'>
+                    <img src="Pictures/plane.png" width='400px' height='200px'/>
+                </div>
+            </div>
+            <div class='goodbye'></div>
+            <script>
+                 $('.laststep').click(function(){
+                  $('.main').hide();
+                  $('.goodbye').html('<h1>You will get an email confirmation for the next step.</h1>');
+
+              })
+             
+          
+
+            </script>
+        </body>
+        </html>
